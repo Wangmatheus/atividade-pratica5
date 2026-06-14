@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+
+<body>
+
+    <header class="container">
+        <h1>Criar conta:</h1>
+    </header>
+
+    <main class="container">
+        <form action="feed.html">
+
+            <p>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required>
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="usuario">Usuário:</label><br>
+                <input type="text" id="usuario" name="usuario" required>
+            </p>
+
+            <p>
+                <label for="senha">Senha:</label><br>
+                <input type="password" id="senha" name="senha" required>
+            </p>
+
+            <p>
+                <label for="confirmar">Confirmar senha:</label><br>
+                <input type="password" id="confirmar" name="confirmar" required>
+            </p>
+
+            <p>
+                <label for="select">Gênero:</label><br>
+                <select id="select" name="select" required>
+                    <option value="" disabled selected>Selecione um gênero:</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </p>
+
+            <p style="text-align: center;">
+                <label for="date">Data de nascimento:</label><br>
+                <input type="date" id="date" name="date">
+            </p>
+
+            <p style="text-align: center;">
+                <input type="submit" value="Cadastrar">
+            </p>
+
+            <a href="index.html" role="button" class="secondary">Já possuo conta.</a>
+
+        </form>
+    </main>
+
+</body>
+
+</html>
